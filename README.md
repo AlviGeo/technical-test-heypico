@@ -48,46 +48,65 @@ cd heypico-technical-test
 
 ### 2. Backend Setup
 
-- Go to the backend directory:
-  ```sh
-  cd backend
-  ```
-- Install dependencies:
-  ```sh
-  npm install
-  ```
-- Create a `.env` file with:
-  ```
-  GOOGLE_MAPS_API_KEY=your_google_maps_api_key
-  FRONTEND_ORIGIN=http://localhost:5173
-  ```
-- Start your local LLM server (e.g., Ollama, Open WebUI) and ensure the endpoint matches your backend code.
-- Start the backend:
-  ```sh
-  npm start
-  # or
-  node index.js
-  ```
+Go to the backend directory:
+
+```sh
+cd backend
+```
+
+Install dependencies:
+
+```sh
+npm install
+```
+
+Create a `.env` file with:
+
+```
+GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+FRONTEND_ORIGIN=http://localhost:5173
+```
+
+Start your local LLM server (e.g., Ollama, Open WebUI) and ensure the endpoint matches your backend code.
+Start the backend:
+
+```sh
+npm run dev
+```
+
+Run for the Local LLM
+
+```sh
+ollama run llama3
+```
 
 ### 3. Frontend Setup
 
-- Go to the frontend directory:
-  ```sh
-  cd ../frontend
-  ```
-- Install dependencies:
-  ```sh
-  npm install
-  ```
-- Create a `.env` file with:
-  ```
-  VITE_API_BASE_URL=http://localhost:8000/api/maps
-  ```
-- Start the frontend:
-  ```sh
-  npm run dev
-  ```
-- Open [http://localhost:5173](http://localhost:5173) in your browser.
+Go to the frontend directory:
+
+```sh
+cd ../frontend
+```
+
+Install dependencies:
+
+```sh
+npm install
+```
+
+Create a `.env` file with:
+
+```
+VITE_API_BASE_URL=http://localhost:8000/api/maps
+```
+
+Start the frontend:
+
+```sh
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
@@ -120,7 +139,3 @@ cd heypico-technical-test
 - [Vite](https://vitejs.dev/) + [React](https://react.dev/)
 
 ---
-
-## License
-
-MIT (or specify your license here)
