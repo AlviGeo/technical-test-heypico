@@ -3,6 +3,6 @@ const router = express.Router();
 
 const locationController = require("../controllers");
 
-router.post("/search", locationController.search);
+router.post("/maps/search", locationController.search);
 
 module.exports = router;

@@ -1,9 +1,0 @@
-name: Google Maps Tool
-description: Search for places and return map links or embedded maps.
-url: http://localhost:8000/search
-method: POST
-input:
-  - name: query
-    type: string
-    required: true
-    description: What place to look for
